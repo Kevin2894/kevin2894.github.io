@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Kevin</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Animated Background -->
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="clouds"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">Portfolio</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">Over</a></li>
+                <li><a href="#python-projects" class="nav-link">Python</a></li>
+                <li><a href="#wordpress-projects" class="nav-link">WordPress</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="glitch" data-text="HELLO WORLD">HELLO WORLD</div>
+            <h1 class="hero-title">Ik ben Kevin</h1>
+            <p class="hero-subtitle">Python Developer | Web Designer </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">Bekijk Projecten</a>
+                <a href="#contact" class="btn btn-secondary">Contact</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Over <span class="highlight">Mij</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Na het succesvol afronden van mijn opleiding tot Python Developer heb ik een sterke expertise opgebouwd in backendontwikkeling met Python. Ik leerde gestructureerde, leesbare code schrijven en bouwde verschillende toepassingen waarbij data, logica en gebruiksvriendelijkheid centraal stonden.
+
+Mijn achtergrond in webdesign blijft daarbij een grote troef. Ik denk steeds na over de gebruikservaring en zorg voor een duidelijke, overzichtelijke structuur in elk project. Die combinatie van technische kennis en gevoel voor visueel ontwerp helpt me om doordachte en goed opgebouwde applicaties te maken.
+
+Ik ben leergierig, werk graag gestructureerd en ben gemotiveerd om mijn vaardigheden verder te ontwikkelen binnen een dynamisch team, waar ik een waardevolle bijdrage kan leveren én tegelijk kan blijven groeien als developer.
+
+</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Projecten</p>
+                        </div>
+                        <div class="stat">
+                            <h3>2</h3>
+                            <p>Diploma's</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1</h3>
+                            <p>Stage Voltooid</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-container">
+                        <div class="image-border"></div>
+                        <img src="img/profiel_foto.jpeg" alt="Kevin Profile Photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Python Projects Section -->
+    <section id="python-projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Python <span class="highlight">Projecten</span></h2>
+            <div class="projects-grid">
+                <!-- Stage Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="video/stage_veloapp.gif" alt="Stage Project - VeloApp">
+                        <div class="project-overlay">
+                            <a href="video/stage_veloapp.gif" class="project-link" target="_blank"><i class='bx bx-link-external'></i></a>
+                            <a href="#" class="project-link"><i class='bx bxl-github'></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Stage Project - Velo App</h3>
+                        <p>Tijdens onze stage ontwikkelden mijn team en ik een Flask-webapplicatie voor een fietsstation, met rit-simulatie, integratie van de Velo Antwerpen API en een beheerdersportaal</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Professional</span>
+                            <span class="tech-tag">Stage</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Groepsproject 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="video/northapp.gif" alt="Groepsproject 1 - NorthApp">
+                        <div class="project-overlay">
+                            <a href="video/northapp.gif" class="project-link" target="_blank"><i class='bx bx-link-external'></i></a>
+                            <a href="#" class="project-link"><i class='bx bxl-github'></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Groepsproject 1 - NorthApp</h3>
+                        <p>Eerste groepsproject waarin we als team een desktop agenda-applicatie ontwikkelden met PyQt5 — mijn allereerste project met Python</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Teamwork</span>
+                            <span class="tech-tag">Agile</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Groepsproject 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="video/VOID.gif" alt="Groepsproject 2 - VOID">
+                        <div class="project-overlay">
+                            <a href="video/VOID.gif" class="project-link" target="_blank"><i class='bx bx-link-external'></i></a>
+                            <a href="#" class="project-link"><i class='bx bxl-github'></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Groepsproject 2 - VOID</h3>
+                        <p>Tweede groepsproject waarin we als team een moderne, interactieve chatapplicatie ontwikkelden</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Git</span>
+                            <span class="tech-tag">Collaboration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Individueel Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;">
+                            <source src="video/game_flask.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="project-overlay">
+                            <a href="video/game_flask.mp4" class="project-link" target="_blank"><i class='bx bx-link-external'></i></a>
+                            <a href="#" class="project-link"><i class='bx bxl-github'></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Horror Game - Eindwerk</h3>
+                        <p>Zelfstandig ontwikkelde point-and-click horrorgame met Flask, volledig uitgewerkt in HTML, CSS, JavaScript, Python en SQL</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Game Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WordPress Projects Section -->
+    <section id="wordpress-projects" class="projects wordpress-section">
+        <div class="container">
+            <h2 class="section-title">WordPress <span class="highlight">Websites</span></h2>
+            <div class="projects-grid">
+                <!-- Restaurant Website -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/Tapas_clement.png" alt="Restaurant Website">
+                        <div class="project-overlay">
+                            <a href="https://www.tapasclement.be" class="project-link"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Tapas Clement</h3>
+                        <p>Moderne website voor een tapasbar met online menu, reserveringssysteem en responsive design</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">WordPress</span>
+                            <span class="tech-tag">Restaurant</span>
+                            <span class="tech-tag">Responsive</span>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- E-commerce Website (in ontwikkeling) -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/work_in_progress.png" alt="E-commerce Website">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+
+                        <h3>E-commerce kleding</h3>
+                        <p>work in progress</progress></p>
+                        <div class="project-tech">
+                            <span class="tech-tag">WordPress</span>
+                            <span class="tech-tag">WooCommerce</span>
+                            <span class="tech-tag">In Progress</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Mijn <span class="highlight">Skills</span></h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <i class='bx bxl-html5'></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class='bx bxl-css3'></i>
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <i class='bx bxl-python'></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class='bx bxl-flask'></i>
+                            <span>Flask</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class='bx bxs-data'></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class='bx bxl-postgresql'></i>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Design & CMS</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <i class='bx bxl-wordpress'></i>
+                            <span>WordPress</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class='bx bxs-shopping-bag'></i>
+                            <span>WooCommerce</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class='bx bxl-adobe'></i>
+                            <span>Adobe Creative Suite</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <i class='bx bxl-git'></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class='bx bxl-docker'></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class='bx bxs-terminal'></i>
+                            <span>PyCharm</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class='bx bxl-visual-studio'></i>
+                            <span>VS Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Neem <span class="highlight">Contact</span> Op</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    
+                    
+                    <div class="contact-links">
+                        <a href="mailto:kevin-casilda@hotmail.com" class="contact-link">
+                            <i class='bx bx-envelope'></i>
+                            <span>kevin-casilda@hotmail.com</span>
+                        </a>
+                        <a href="#" class="contact-link">
+                            <i class='bx bxl-linkedin'></i>
+                            <span>Linkedin</span>
+                        </a>
+                        <a href="#" class="contact-link">
+                            <i class='bx bxl-github'></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Kevin. Gemaakt met <span class="highlight">♥</span> en veel <span class="highlight">Koffie</span></p>
+
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
