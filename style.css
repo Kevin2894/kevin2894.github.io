@@ -892,3 +892,106 @@ section {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--accent);
 }
+
+
+
+
+
+
+/* === EDUCATION SECTION === */
+.education-section {
+    background: rgba(107, 70, 193, 0.05);
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.education-card {
+    background: rgba(10, 0, 20, 0.8);
+    border: 1px solid rgba(107, 70, 193, 0.3);
+    border-radius: 10px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+    bbox-shadow: 0 15px 30px rgba(107, 70, 193, 0.3);
+    border-color: var(--accent);
+}
+
+.education-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: var(--primary);
+    border-radius: 2px;
+}
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.education-header h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    color: var(--light);
+    margin: 0;
+}
+
+.education-period {
+    background: rgba(107, 70, 193, 0.2);
+    color: var(--accent);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid rgba(107, 70, 193, 0.3);
+}
+
+.education-details {
+    margin-left: 1rem;
+}
+
+.education-type {
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+.education-school {
+    color: rgba(255, 255, 255, 0.8);
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.education-description p {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive voor education */
+@media (max-width: 768px) {
+    .education-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .education-period {
+        align-self: flex-start;
+    }
+}
