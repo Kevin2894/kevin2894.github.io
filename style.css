@@ -754,11 +754,50 @@ section {
 }
 
 /* === RESPONSIVE === */
+/* Tablet */
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .floating-shapes {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .projects-grid {
+        gap: 1.5rem;
+    }
+}
+
+/* Mobile Large */
 @media (max-width: 768px) {
     /* Verberg cursor op mobile */
     .cursor,
     .cursor-follower {
         display: none !important;
+    }
+    
+    /* Container aanpassingen */
+    .container {
+        padding: 0 1rem;
+    }
+    
+    section {
+        padding: 60px 0;
+    }
+    
+    /* Navigation */
+    .navbar {
+        padding: 0.75rem 0;
+    }
+    
+    .nav-container {
+        padding: 0 1rem;
+    }
+    
+    .logo-text {
+        font-size: 1.2rem;
     }
     
     .hamburger {
@@ -768,17 +807,23 @@ section {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 60px;
         flex-direction: column;
-        background: rgba(10, 0, 20, 0.95);
+        background: rgba(10, 0, 20, 0.98);
         width: 100%;
         text-align: center;
         transition: 0.3s;
         padding: 2rem 0;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     }
     
     .nav-menu.active {
         left: 0;
+    }
+    
+    .nav-link {
+        font-size: 1.1rem;
+        padding: 0.5rem 0;
     }
     
     .hamburger.active .bar:nth-child(1) {
@@ -793,42 +838,152 @@ section {
         transform: rotate(45deg) translate(-5px, -6px);
     }
     
+    /* Hero Section */
     .hero {
         flex-direction: column;
         text-align: center;
-        padding: 100px 5%;
+        padding: 100px 20px 60px;
+        min-height: calc(100vh - 60px);
+    }
+    
+    .hero-content {
+        width: 100%;
+    }
+    
+    .glitch {
+        font-size: 0.85rem;
+        letter-spacing: 3px;
     }
     
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
     }
     
     .hero-buttons {
         justify-content: center;
         flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+    
+    .btn {
+        padding: 0.875rem 1.75rem;
+        font-size: 0.9rem;
+        width: 100%;
+        max-width: 250px;
+    }
+    
+    .hero-image {
+        margin-top: 2rem;
     }
     
     .floating-shapes {
-        width: 300px;
-        height: 300px;
-        margin-top: 3rem;
+        width: 250px;
+        height: 250px;
     }
     
+    .shape {
+        filter: blur(30px);
+    }
+    
+    .shape-1 {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .shape-2 {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .shape-3 {
+        width: 80px;
+        height: 80px;
+    }
+    
+    /* Section Titles */
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    /* About Section */
     .about-content {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
     
+    .about-text p {
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+    }
+    
     .about-stats {
-        justify-content: center;
+        justify-content: space-around;
+        gap: 1rem;
+        flex-wrap: wrap;
     }
     
-    #python-projects .projects-grid {
-        grid-template-columns: 1fr;
+    .stat {
+        min-width: 100px;
+        padding: 0.75rem;
     }
     
-    .skills-container {
+    .stat h3 {
+        font-size: 1.5rem;
+    }
+    
+    .stat p {
+        font-size: 0.85rem;
+    }
+    
+    .image-container {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    /* Projects */
+    #python-projects .projects-grid,
+    .projects-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .project-card {
+        margin: 0 auto;
+        max-width: 400px;
+        width: 100%;
+    }
+    
+    .project-image {
+        height: 200px;
+    }
+    
+    .project-content {
+        padding: 1.25rem;
+    }
+    
+    .project-content h3 {
+        font-size: 1.25rem;
+    }
+    
+    .project-content p {
+        font-size: 0.9rem;
+    }
+    
+    .tech-tag {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.6rem;
+    }
+    
+    /* Education */
+    .education-card {
+        padding: 1.5rem;
     }
     
     .education-header {
@@ -837,8 +992,141 @@ section {
         gap: 0.5rem;
     }
     
+    .education-header h3 {
+        font-size: 1.25rem;
+    }
+    
     .education-period {
         align-self: flex-start;
+        font-size: 0.8rem;
+    }
+    
+    .education-details {
+        margin-left: 0.5rem;
+    }
+    
+    .education-type,
+    .education-school {
+        font-size: 0.9rem;
+    }
+    
+    .education-description p {
+        font-size: 0.875rem;
+    }
+    
+    /* Skills */
+    .skills-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .skill-category h3 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+    
+    .skill-list {
+        gap: 0.75rem;
+    }
+    
+    .skill-item {
+        padding: 0.75rem;
+        font-size: 0.9rem;
+    }
+    
+    .skill-item i {
+        font-size: 1.25rem;
+    }
+    
+    /* Contact */
+    .contact-links {
+        gap: 0.75rem;
+    }
+    
+    .contact-link {
+        padding: 0.875rem;
+        font-size: 0.9rem;
+    }
+    
+    .contact-link i {
+        font-size: 1.25rem;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: 1.5rem 0;
+        font-size: 0.875rem;
+    }
+}
+
+/* Mobile Small */
+@media (max-width: 480px) {
+    /* Hero aanpassingen voor kleine schermen */
+    .hero-title {
+        font-size: 1.875rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.875rem;
+    }
+    
+    .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.875rem;
+    }
+    
+    .floating-shapes {
+        width: 200px;
+        height: 200px;
+    }
+    
+    /* Sections */
+    section {
+        padding: 50px 0;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    /* Stats in 2x2 grid op heel kleine schermen */
+    .about-stats {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+    
+    .stat {
+        min-width: auto;
+    }
+    
+    /* Skills in 1 kolom op kleine schermen */
+    .skill-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Extra kleine schermen (onder 360px) */
+@media (max-width: 360px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .glitch {
+        font-size: 0.75rem;
+        letter-spacing: 2px;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .project-content h3 {
+        font-size: 1.1rem;
+    }
+    
+    .education-header h3 {
+        font-size: 1.1rem;
     }
 }
 
